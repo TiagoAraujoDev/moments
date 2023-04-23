@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+
+  --yellow-200: #fde68a;
+  --yellow-400: #fbbf24;
+  --yellow-600: #d97706;
+
+  --indigo-200: #c7d2fe;
+  --indigo-400: #818cf8;
+  --indigo-600: #4f46e5;
+
+  --green-200: #bbf7d0;
+  --green-400: #4ade80;
+  --green-600: #16a34a;
+
+  --red-200: #fecaca;
+  --red-400: #f87171;
+  --red-600: #dc2626;
+
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--gray-950);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
