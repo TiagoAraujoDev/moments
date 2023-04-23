@@ -1,0 +1,24 @@
+footer {
+  width: 100%;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-800);
+  padding: 2.4rem 3.2rem;
+}
+
+footer > div > p {
+  color: var(--yellow-400);
+  text-align: center;
+}
+
+footer > div > p:first-child {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer > div > p:last-child {
+  font-size: 1.4rem;
+  font-weight: 300;
+}

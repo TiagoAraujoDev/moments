@@ -1,0 +1,5 @@
+main {
+  min-height: calc(100vh - 12.8rem);
+  width: 70%;
+  margin: 0 auto;
+}

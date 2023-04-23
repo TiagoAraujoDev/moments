@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-800);
+  padding: 2.4rem 3.2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo > img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.logo > span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--yellow-400);
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav > a {
+  color: var(--yellow-200);
+}
+
+nav > a:hover {
+  color: var(--yellow-400);
+}

@@ -43,11 +43,15 @@
 body {
   background: var(--gray-950);
   color: var(--white);
+  width: 100vw;
   -webkit-font-smoothing: antialiased;
 }
 
-body, input, button, textarea {
-  font-family: 'Roboto', sans-serif;
+body,
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
