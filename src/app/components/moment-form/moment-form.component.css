@@ -38,9 +38,6 @@ form {
   color: var(--gray-100);
 }
 
-/* .input-section-file > input[type=file] { */
-/* } */
-
 button {
   width: 50%;
   margin: 0 auto;
@@ -56,4 +53,11 @@ button {
 button:hover {
   background-color: var(--yellow-600);
   transition: all 0.4s ease;
+}
+
+.validation-error > p {
+  color: var(--red-400);
+  margin-top: 0.4rem;
+  border-left: 3px solid var(--red-600);
+  padding-left: 0.6rem;
 }
