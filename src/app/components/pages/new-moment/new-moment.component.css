@@ -3,3 +3,15 @@ main {
   width: 70%;
   margin: 0 auto;
 }
+
+h1 {
+  text-align: center;
+  color: var(--gray-200);
+  padding: 2rem 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+h1 > span {
+  color: var(--yellow-400);
+}

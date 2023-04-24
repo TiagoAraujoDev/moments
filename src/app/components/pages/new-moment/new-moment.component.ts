@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './new-moment.component.html',
   styleUrls: ['./new-moment.component.css'],
 })
-export class NewMomentComponent { }
+export class NewMomentComponent {
+  buttonText: string = 'Share';
+}

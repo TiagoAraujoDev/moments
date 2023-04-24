@@ -45,6 +45,7 @@ body {
   color: var(--white);
   width: 100vw;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body,
