@@ -1,0 +1,37 @@
+.message {
+  width: 50%;
+  position: fixed;
+  margin-left: 50%;
+  top: 3rem;
+  left: -25%;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  z-index: 10;
+}
+
+.message-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.message-header > h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--gray-800);
+}
+
+.message-header > button {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.3rem;
+  color: var(--gray-800);
+}
+
+.message > p {
+  font-size: 1.8rem;
+  color: var(--yellow-400);
+}
