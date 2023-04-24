@@ -1,3 +1,23 @@
 <main>
-  <h1>home</h1>
+  <h1>My moments are here!</h1>
+  <div *ngIf="filteredMoments.length > 0; else noMoments">
+    <div class="moments-container">
+      <div class="moment" *ngFor="let moment of filteredMoments">
+        <img
+          src="{{ baseApiUrl }}/uploads/{{ moment.image }}"
+          alt="{{ moment.title }}"
+        />
+        <h3>{{ moment.title }}</h3>
+        <p class="date">{{ moment.created_at }}</p>
+        <p>Comments: {{ moment.comments!.length }}</p>
+        <p><a routerLink="moments/{{ moment.id }}">Details</a></p>
+      </div>
+    </div>
+  </div>
+  <ng-template #noMoments>
+    <div class="moments-empty">
+      <h2>No moments registered</h2>
+      <img src="../../../../assets/moments.png" alt="" />
+    </div>
+  </ng-template>
 </main>

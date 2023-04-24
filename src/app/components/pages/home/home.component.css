@@ -3,3 +3,63 @@ main {
   width: 70%;
   margin: 0 auto;
 }
+
+main > h1 {
+  text-align: center;
+  font-size: 4.8rem;
+  margin: 3rem 0;
+}
+
+.moments-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.moment {
+  /* border: 1px solid var(--yellow-400); */
+  box-shadow: 1px 1px 5px 0px #f3f4f6aa;
+  border-radius: 8px;
+  width: 32%;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.moment > img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.moment h3,
+.moment p {
+  margin-bottom: 1.6rem;
+}
+
+.date {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+a {
+  color: var(--yellow-400);
+  padding: 0.8rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+a:hover {
+  box-shadow: 1px 1px 4px 0px #f3f4f6aa;
+}
+
+.moments-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.moments-empty > h2 {
+  font-size: 3.2rem;
+}
