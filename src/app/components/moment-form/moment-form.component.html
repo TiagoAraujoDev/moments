@@ -18,7 +18,7 @@
   </div>
   <div class="input-sections input-section-file">
     <label for="image">Image</label>
-    <input type="file" id="image" name="image" />
+    <input type="file" id="image" name="image" (change)="handleFileSelected($event)" />
   </div>
   <button type="submit">{{ buttonText }}</button>
 </form>
