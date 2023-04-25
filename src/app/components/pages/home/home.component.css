@@ -2,12 +2,34 @@ main {
   min-height: calc(100vh - 12.8rem);
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main > h1 {
   text-align: center;
   font-size: 4.8rem;
   margin: 3rem 0;
+}
+
+main > form {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 2.4rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  background-color: var(--gray-700);
+  box-shadow: 1px 1px 3px 0px #f3f4f6aa;
+}
+
+main > form > input[type=text] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--gray-200);
+  flex: 1;
 }
 
 .moments-container {
@@ -18,7 +40,6 @@ main > h1 {
 }
 
 .moment {
-  /* border: 1px solid var(--yellow-400); */
   box-shadow: 1px 1px 5px 0px #f3f4f6aa;
   border-radius: 8px;
   width: 32%;

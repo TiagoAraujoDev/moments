@@ -1,5 +1,15 @@
 <main>
   <h1>My moments are here!</h1>
+  <form>
+    <input
+      type="text"
+      name="searchText"
+      [(ngModel)]="searchText"
+      (input)="handleSearch()"
+      [placeholder]="placeholder"
+    />
+    <fa-icon [icon]="faSearch" />
+  </form>
   <div *ngIf="filteredMoments.length > 0; else noMoments">
     <div class="moments-container">
       <div class="moment" *ngFor="let moment of filteredMoments">
