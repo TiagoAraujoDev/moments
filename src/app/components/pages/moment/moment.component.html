@@ -1,5 +1,5 @@
 <main>
-  <div class="moment">
+  <div class="moment" *ngIf="moment">
     <h1>{{ moment!.title }}</h1>
     <img src="{{ baseApiUrl }}/uploads/{{ moment!.image }}" alt="" />
     <div class="moment-description">
@@ -11,7 +11,7 @@
       <a routerLink="/moments/edit/{{ moment!.id }}">
         <fa-icon [icon]="faEdit" /> edit
       </a>
-      <button>
+      <button (click)="handleRemoveMoment(moment.id!)">
         <fa-icon [icon]="faTimes" /> remove
       </button>
     </div>

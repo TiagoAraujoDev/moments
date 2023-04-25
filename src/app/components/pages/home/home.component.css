@@ -34,14 +34,14 @@ main > form > input[type=text] {
 }
 
 .moments-container {
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  justify-content: space-between;
+  gap: 2rem;
 }
 
 .moment {
-  /* box-shadow: 1px 1px 5px 0px #f3f4f6aa; */
   box-shadow: 0px 0px 9px 0px var(--gray-950);
   border-radius: 8px;
   width: 32%;

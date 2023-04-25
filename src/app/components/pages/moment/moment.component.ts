@@ -6,6 +6,7 @@ import { MomentService } from 'src/app/services/moment.service';
 import { environment } from "src/environments/environment";
 
 import { Moment } from 'src/app/moment';
+import { MessagesService } from 'src/app/services/messages.service';
 
 @Component({
   selector: 'app-moment',
@@ -21,7 +22,9 @@ export class MomentComponent implements OnInit {
 
   constructor(
     private momentService: MomentService,
-    private route: ActivatedRoute
+    private messagesService: MessagesService,
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -30,5 +33,11 @@ export class MomentComponent implements OnInit {
     this.momentService
       .getMoment(id)
       .subscribe((resp) => (this.moment = resp.data));
+  }
+
+  handleRemoveMoment(id: number) {
+    this.momentService.removeMoment(id).subscribe();
+    this.messagesService.addMessage("Moment deleted successfully!");
+    this.router.navigate(['/']);
   }
 }
