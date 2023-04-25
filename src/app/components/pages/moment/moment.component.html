@@ -1,0 +1,23 @@
+<main>
+  <div class="moment">
+    <h1>{{ moment!.title }}</h1>
+    <img src="{{ baseApiUrl }}/uploads/{{ moment!.image }}" alt="" />
+    <div class="moment-description">
+      <h2>Description</h2>
+      <p>{{ moment!.description }}</p>
+    </div>
+    <div class="moment-actions">
+      <h2>Actions:</h2>
+      <a routerLink="/moments/edit/{{ moment!.id }}">
+        <fa-icon [icon]="faEdit" /> edit
+      </a>
+      <button>
+        <fa-icon [icon]="faTimes" /> remove
+      </button>
+    </div>
+  </div>
+  <div class="comments-container">
+    <!-- TODO: -->
+    <h2>Comments</h2>
+  </div>
+</main>

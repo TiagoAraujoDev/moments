@@ -17,11 +17,12 @@ main > form {
   display: flex;
   align-items: center;
   width: 60%;
+  height: 4.8rem;
   margin-bottom: 2.4rem;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
   background-color: var(--gray-700);
-  box-shadow: 1px 1px 3px 0px #f3f4f6aa;
+  box-shadow: 1px 1px 5px 0px var(--gray-950);
 }
 
 main > form > input[type=text] {
@@ -40,7 +41,8 @@ main > form > input[type=text] {
 }
 
 .moment {
-  box-shadow: 1px 1px 5px 0px #f3f4f6aa;
+  /* box-shadow: 1px 1px 5px 0px #f3f4f6aa; */
+  box-shadow: 0px 0px 9px 0px var(--gray-950);
   border-radius: 8px;
   width: 32%;
   margin-bottom: 2.4rem;
@@ -71,7 +73,7 @@ a {
 }
 
 a:hover {
-  box-shadow: 1px 1px 4px 0px #f3f4f6aa;
+  box-shadow: 0px 0px 9px 0px var(--gray-950);
 }
 
 .moments-empty {

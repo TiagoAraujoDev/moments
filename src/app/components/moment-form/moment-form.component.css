@@ -48,6 +48,7 @@ button {
   border: none;
   border-radius: 3px;
   background-color: var(--yellow-400);
+  box-shadow: 1px 1px 5px 0px var(--gray-950);
 }
 
 button:hover {
