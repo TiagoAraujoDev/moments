@@ -26,6 +26,7 @@ form {
   border-radius: 3px;
   padding: 0.6rem 1rem;
   color: var(--gray-100);
+  box-shadow: 1px 1px 12px 0px var(--gray-950);
 }
 
 .input-section-description > textarea {
@@ -36,6 +37,7 @@ form {
   padding: 0.6rem 1rem;
   resize: none;
   color: var(--gray-100);
+  box-shadow: 1px 1px 12px 0px var(--gray-950);
 }
 
 button {
