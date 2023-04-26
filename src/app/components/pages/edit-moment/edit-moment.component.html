@@ -1,0 +1,8 @@
+<main>
+  <h1>Edit {{ moment.title }}</h1>
+  <app-moment-form
+    [buttonText]="buttonText"
+    [momentData]="moment"
+    (notifySubmit)="editMomentHnadler($event)"
+  />
+</main>

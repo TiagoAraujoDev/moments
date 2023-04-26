@@ -1,0 +1,10 @@
+main {
+  min-height: calc(100vh - 12.8rem);
+  width: 70%;
+  margin: 0 auto;
+}
+
+main > h1 {
+  text-align: center;
+  padding: 1.8rem 0;
+}

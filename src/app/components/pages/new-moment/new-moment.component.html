@@ -1,4 +1,7 @@
 <main>
   <h1>Share a new <span>moment</span>!</h1>
-  <app-moment-form [buttonText]="buttonText" (notifySubmit)="createMomentHandler($event)" />
+  <app-moment-form
+    [buttonText]="buttonText"
+    (notifySubmit)="createMomentHandler($event)"
+  />
 </main>

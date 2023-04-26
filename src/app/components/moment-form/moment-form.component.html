@@ -1,14 +1,24 @@
 <form (ngSubmit)="handleSubmit()" [formGroup]="momentForm" #formDir="ngForm">
   <div class="input-sections input-section-title">
+    <input type="hidden" formControlName="id" />
     <label for="title"> Title: </label>
-    <input type="text" formControlName="title" placeholder="Enter a title..." required />
+    <input
+      type="text"
+      formControlName="title"
+      placeholder="Enter a title..."
+      required
+    />
     <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
       <p *ngIf="title.errors?.['required']">Invalid title!</p>
     </div>
   </div>
   <div class="input-sections input-section-description">
     <label for="description">Description</label>
-    <textarea formControlName="description" placeholder="What happen over there?" required></textarea>
+    <textarea
+      formControlName="description"
+      placeholder="What happen over there?"
+      required
+    ></textarea>
     <div
       *ngIf="description.invalid && formDir.submitted"
       class="validation-error"
@@ -18,7 +28,12 @@
   </div>
   <div class="input-sections input-section-file">
     <label for="image">Image</label>
-    <input type="file" id="image" name="image" (change)="handleFileSelected($event)" />
+    <input
+      type="file"
+      id="image"
+      name="image"
+      (change)="handleFileSelected($event)"
+    />
   </div>
   <button type="submit">{{ buttonText }}</button>
 </form>

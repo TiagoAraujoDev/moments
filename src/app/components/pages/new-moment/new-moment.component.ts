@@ -29,8 +29,9 @@ export class NewMomentComponent {
       formData.append('image', moment.image);
     }
 
-    this.momentService.createMoment(formData).subscribe();
-    this.messagesService.addMessage('Moment added!');
-    this.router.navigate(['/']);
+    this.momentService.createMoment(formData).subscribe(() => {
+      this.messagesService.addMessage('Moment added!');
+      this.router.navigate(['/']);
+    });
   }
 }

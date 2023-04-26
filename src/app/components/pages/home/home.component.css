@@ -37,6 +37,7 @@ main > form > input[type=text] {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   max-width: 100%;
   gap: 2rem;
 }
