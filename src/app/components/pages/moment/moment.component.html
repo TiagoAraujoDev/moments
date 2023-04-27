@@ -34,18 +34,38 @@
   </div>
   <div class="comment-form">
     <h3>Leave a comment:</h3>
-    <form>
+    <form
+      (ngSubmit)="handleSubmitComment(formDir)"
+      [formGroup]="commentForm"
+      #formDir="ngForm"
+    >
       <div class="form-group">
         <label for="comment">Comment:</label>
-        <textarea placeholder="Say something..." required></textarea>
+        <textarea
+          formControlName="text"
+          placeholder="Say something..."
+          required
+        ></textarea>
+        <div *ngIf="text.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="text.errors?.['required']">Text is required!</p>
+        </div>
       </div>
       <div class="form-group">
         <label for="author">Author:</label>
-        <input type="text" placeholder="What's your name..." required />
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="What's your name..."
+          required
+        />
+        <div
+          *ngIf="username.invalid && formDir.submitted"
+          class="validation-error"
+        >
+          <p *ngIf="username.errors?.['required']">Author is required!</p>
+        </div>
       </div>
-      <button>
-        comment
-      </button>
+      <button>comment</button>
     </form>
   </div>
 </main>

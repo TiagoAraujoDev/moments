@@ -187,3 +187,10 @@ img {
   color: var(--yellow-400);
   font-weight: bold;
 }
+
+.validation-error > p {
+  color: var(--red-400);
+  margin-top: 0.4rem;
+  border-left: 3px solid var(--red-600);
+  padding-left: 0.6rem;
+}
